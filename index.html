@@ -11,7 +11,7 @@
   <script>
     new kakao.Postcode({
         oncomplete: function(data) {
-          window.Android.postMessageToAndroid(JSON.stringify(data).toString());
+          Android.postMessageToAndroid(JSON.stringify(postData).toString());
         }
     }).open();
 
@@ -49,7 +49,7 @@
               jibunAddress : jibunAddress,
               zonecode : data.zonecode
           };
-          window.Android.postMessageToAndroid(JSON.stringify(postData).toString());
+          Android.postMessageToAndroid(JSON.stringify(postData).toString());
         },
         width : '100%',
         height : '100%'
