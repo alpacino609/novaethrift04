@@ -49,8 +49,6 @@
               jibunAddress : jibunAddress,
               zonecode : data.zonecode
           };
-          window.postMessageToiOS(postData);
-          Android.postMessageToAndroid(JSON.stringify(postData).toString());
           window.Android.postMessageToAndroid(JSON.stringify(postData).toString());
         },
         width : '100%',
